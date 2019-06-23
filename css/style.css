@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+#settings,
+#game {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#score {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#score p {
+    color: #666;
+}
+
+.hit {
+    color: #29AB91!important;
+}
+
+.miss {
+    color: #E92614!important;
+}
+
+#score .left {
+    color: rgb(49, 100, 196);
+}
+
+#score p,
+#score div {
+    margin-bottom: 5px;
+}
+
+#settings .level {
+    display: flex;
+    -webkit-display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;    
+}
+
+#settings .level span {
+    margin-right: 50px;
+}
+
+#settings .level input {
+    cursor: pointer;
+}
+
+#settings .start-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#settings .start-btn button {
+    font-size: 16px;
+    border: 1px solid #7f3f97;
+    background: #fff;
+    color: #7f3f97;
+    padding: 5px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#settings button.stop {
+    color: #E92614;
+    border-color: #E92614;
+}
+
+#settings button.restart {
+    color: orange;
+    border-color: orange;
+}
+
+#game .target {
+    font-size: 40px;
+    text-align: center;
+}
+
+#game .user-input {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#game .user-input input {
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+}
+
+#game .letters {
+    width: 100%;
+    margin-top: 50px
+}
+
+#game .letters .letter {
+    display: inline-block;
+    width: calc(16.67% - 5px);
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+    color: #888;
+}

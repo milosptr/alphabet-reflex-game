@@ -1,0 +1,74 @@
+<!doctype HTML>
+<html>
+    <head>
+        <!-- Meta tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <title>Letter Game</title>
+
+        <!-- stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="settings">
+            <div class="level">
+                <span><input type="radio" name="level" value="5000" /> Easy</span>
+                <span><input type="radio" name="level" value="3500" checked/> Medium</span>
+                <span><input type="radio" name="level" value="2000" /> Hard</span>
+            </div>
+            <div class="start-btn">
+                <button onclick="StartGame()" class="start">Start Game</button>
+                <button onclick="StopGame()" class="stop" hidden>Stop Game</button>
+                <button onclick="RestartGame()" class="restart" hidden>Restart Game</button>
+            </div>
+            <div id="score">
+                <p>Score</p>
+                <div class="hit">Hit: <span>0</span></div>
+                <div class="miss">Miss: <span>0</span></div>
+                <div class="left">Left: <span>26</span></div>
+            </div>
+        </section>
+        <section id="game">
+            <div class="target">
+                ?
+            </div>
+            <div class="user-input">
+                <input type="text" name="input" placeholder="Input letter" />
+            </div>
+            <div class="letters">
+                <div class="letter">A (1)</div>
+                <div class="letter">B (2)</div>
+                <div class="letter">C (3)</div>
+                <div class="letter">D (4)</div>
+                <div class="letter">E (5)</div>
+                <div class="letter">F (6)</div>
+                <div class="letter">G (7)</div>
+                <div class="letter">H (8)</div>
+                <div class="letter">I (9)</div>
+                <div class="letter">J (10)</div>
+                <div class="letter">K (11)</div>
+                <div class="letter">L (12)</div>
+                <div class="letter">M (13)</div>
+                <div class="letter">N (14)</div>
+                <div class="letter">O (15)</div>
+                <div class="letter">P (16)</div>
+                <div class="letter">Q (17)</div>
+                <div class="letter">R (18)</div>
+                <div class="letter">S (19)</div>
+                <div class="letter">T (20)</div>
+                <div class="letter">U (21)</div>
+                <div class="letter">V (22)</div>
+                <div class="letter">W (23)</div>
+                <div class="letter">X (24)</div>
+                <div class="letter">Y (25)</div>
+                <div class="letter">Z (26)</div>
+            </div>
+        </section>
+
+
+        <!-- Scripts -->
+        <script src="js/gamescript.js"></script>
+    </body>
+</html>
